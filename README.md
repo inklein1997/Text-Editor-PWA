@@ -1,132 +1,89 @@
-# Unit 19 PWA Homework: Text Editor
+# TEXT EDITOR PWA
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
-## Your Task
+## Table of Contents
+- [Description](#Description)
+- [Links](#Links)
+- [Technologies](#Technologies)
+- [Screenshots](#Screenshots)
+- [Installation Instructions](#Installation-Instructions)
+- [User Instructions](#User-Instructions)
+- [License](#License)
+- [Contributors](#Contributors)
+- [Contribution Instructions](#Contribution-Instructions)
+- [Acknowledgements](#Acknowledgements)
+- [Questions](#Questions)
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+## Description
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+**Text-Editor-PWA** is a full stack PWA where developers can write and save code snippets for later use.  **Text-Editor-PWA** uses a serviceworker, your browsers database, and webpack meaning that this application is installable and able to run offline.
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+## Links
+[URL to deployed application](https://jate-te-pwa.herokuapp.com/)<br>
+[URL to GitHub repository](https://github.com/inklein1997/Text-Editor-PWA)
 
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
+## Technologies
+![Javascript logo](/Assets/images/javascript-logo.png)
+![Webpack logo](/Assets/images/webpack-logo.png)
+![NodeJS logo](/Assets/images/nodejs-logo.png)
+![Code-Mirror logo](/Assets/images/code-mirror-logo.png)
 
-## User Story
+## Screenshots
+[screenshot of application](/Assets/images/application-screenshot.png)
+## Installation Instructions
 
-```md
-AS A developer
-I WANT to create notes or code snippets with or without an internet connection
-SO THAT I can reliably retrieve them for later use
+1. Since **Text-Editor-PWA** is primarily a NodeJS application, you must have NodeJS downloaded. Please download [here](https://nodejs.org/en/download/) if you have not done so previously.
+
+<br>
+
+2. **Text-Editor-PWA** utilizes the following packages
+| Package Name |
+| ----- |
+| ![Express](https://www.npmjs.com/package/express) |
+| ![Webpack](https://webpack.js.org/) |
+| ![idb](https://www.npmjs.com/package/idb) |
+| ![Code Mirror](https://www.npmjs.com/package/codemirror) |
+
+**You can install these packages by entering the following command into your command line...
+
+```
+npm i
 ```
 
-## Acceptance Criteria
+*NOTE*: your terminal must be located in the roote of the Text-Editor-PWA repository
 
-```md
-GIVEN a text editor web application
-WHEN I open my application in my editor
-THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
-THEN I find that my application should start up the backend and serve the client
-WHEN I run the text editor application from my terminal
-THEN I find that my JavaScript files have been bundled using webpack
-WHEN I run my webpack plugins
-THEN I find that I have a generated HTML file, service worker, and a manifest file
-WHEN I use next-gen JavaScript in my application
-THEN I find that the text editor still functions in the browser without errors
-WHEN I open the text editor
-THEN I find that IndexedDB has immediately created a database storage
-WHEN I enter content and subsequently click off of the DOM window
-THEN I find that the content in the text editor has been saved with IndexedDB
-WHEN I reopen the text editor after closing it
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
-WHEN I load my web application
-THEN I should have a registered service worker using workbox
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-WHEN I deploy to Heroku
-THEN I should have proper build scripts for a webpack application
-```
+## User Instructions
+1. To save any code edits, be sure to click outside of the code box.
+2. To install this PWA, please click either install buttons either at the top of the page, or in the url (see picture for reference)
+[install button locations](/Assets/images/step1.png)
 
-## Mock-Up
+## License
 
-The following animation demonstrates the application functionality:
+This project is licensed under the terms of [MIT](https://opensource.org/licenses/MIT).
 
-![Demonstration of the finished Unit 19 Homework being used in the browser and then installed.](./Assets/00-demo.gif)
+## Contributors
 
-The following image shows the application's `manifest.json` file:
+[<img src="https://avatars.githubusercontent.com/u/93157433?v=4" width="75" height="75">](https://github.com/inklein1997)
 
-![Demonstration of the finished Unit 19 Homework with a manifest file in the browser.](./Assets/01-manifest.png)
+## Contribution Instructions
 
-The following image shows the application's registered service worker:
+Before contributing to **Text-Editor-PWA**, please read this [code of conduct](code_of_conduct.md)[^1].<br>
+Here's how you can contribute...
+1. Add issue or recommendation for improvement to Issues tab on Github.
+2. Submit pull request for review.
 
-![Demonstration of the finished Unit 19 Homework with a registered service worker in the browser.](./Assets/02-service-worker.png)
+## Acknowledgements
+Most of this code was provided by the University of Texas at Austin Bootcamp curriculum.  Another note to add regarding this code--there is not much room for code variability while using the webpack and the IDB packages.  THEREFORE, a good amount of this repo contains alot of identifical code snippets from other places.  Credit is extended to the following...
+[The activities section of UT Austins coding bootcamp curriculum, unit 19](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-VIRT-FSF-FT-12-2021-U-LOL/tree/main/19-PWA/01-Activities)
+[Webpack documentation](https://webpack.js.org/concepts/)
 
-The following image shows the application's IndexedDB storage:
+## Questions?
 
-![Demonstration of the finished Unit 19 Homework with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
+If you have any questions, please contact us via:
 
-## Grading Requirements
+| Name | Github | Email |
+| ----------- | ----------- | ----------- |
+| Michael Klein | [@inklein1997](https://github.com/inklein1997) | michaelklein1997@gmail.com |
 
-This homework is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses IndexedDB to create an object store and includes both GET and PUT methods
-
-  * The application works without an internet connection
-
-  * Automatically saves content inside the text editor when the DOM window is unfocused
-
-  * Bundled with webpack
-
-  * Create a service worker with workbox that Caches static assets
-
-  * The application should use babel in order to use async / await
-
-  * Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-
-  * Can be installed as a Progressive Web Application
-
-### Deployment: 32%
-
-* Application deployed to Heroku at live URL with build scripts
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+[^1]: Code of Conduct provided by [Contributor Covenant](https://www.contributor-covenant.org/)
