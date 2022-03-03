@@ -30,7 +30,7 @@
 ![Code-Mirror logo](/Assets/images/code-mirror-logo.png)
 
 ## Screenshots
-[screenshot of application](/Assets/images/application-screenshot.png)
+![screenshot of application](/Assets/images/application-screenshot.png)
 ## Installation Instructions
 
 1. Since **Text-Editor-PWA** is primarily a NodeJS application, you must have NodeJS downloaded. Please download [here](https://nodejs.org/en/download/) if you have not done so previously.
@@ -38,12 +38,13 @@
 <br>
 
 2. **Text-Editor-PWA** utilizes the following packages
+
 | Package Name |
 | ----- |
-| ![Express](https://www.npmjs.com/package/express) |
-| ![Webpack](https://webpack.js.org/) |
-| ![idb](https://www.npmjs.com/package/idb) |
-| ![Code Mirror](https://www.npmjs.com/package/codemirror) |
+| [Express](https://www.npmjs.com/package/express) |
+| [Webpack](https://webpack.js.org/) |
+| [idb](https://www.npmjs.com/package/idb) |
+| [Code Mirror](https://www.npmjs.com/package/codemirror) |
 
 **You can install these packages by entering the following command into your command line...
 
@@ -74,8 +75,8 @@ Here's how you can contribute...
 2. Submit pull request for review.
 
 ## Acknowledgements
-Most of this code was provided by the University of Texas at Austin Bootcamp curriculum.  Another note to add regarding this code--there is not much room for code variability while using the webpack and the IDB packages.  THEREFORE, a good amount of this repo contains alot of identifical code snippets from other places.  Credit is extended to the following...
-[The activities section of UT Austins coding bootcamp curriculum, unit 19](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-VIRT-FSF-FT-12-2021-U-LOL/tree/main/19-PWA/01-Activities)
+Most of this code was provided by the University of Texas at Austin Bootcamp curriculum.  Another note to add regarding this code--there is not much room for code variability while using the webpack and the IDB packages.  THEREFORE, a good amount of this repo contains alot of identifical code snippets from other places.  Credit is extended to the following...<br><br>
+[The activities section of UT Austins coding bootcamp curriculum, unit 19](https://github.com/the-Coding-Boot-Camp-at-UT/UTA-VIRT-FSF-FT-12-2021-U-LOL/tree/main/19-PWA/01-Activities)<br>
 [Webpack documentation](https://webpack.js.org/concepts/)
 
 ## Questions?
